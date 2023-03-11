@@ -1,5 +1,6 @@
 ---
-	  import Navigation from '../components/Navigation.astro';
+	  import Header from '../components/Header.astro';
+		import Footer from '../components/Footer.astro';
 
 		import '../styles/global.css';		
 
@@ -15,7 +16,12 @@
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<Navigation />
+		<Header />
 		<h1>Astro init</h1>
+
+		<Footer />
+		<script>
+    	import "../js/menu.js";
+  	</script>
 	</body>
 </html>
